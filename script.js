@@ -1,3 +1,4 @@
+
 function buscaCep() {
     inputCep = document.querySelector('#cep');
     const CEP = inputCep.value.replace('-', '');
@@ -30,7 +31,6 @@ function buscaCep() {
             estado.innerText = `Estado: ${data.uf}`;
 
             lista.innerHTML = '';
-            dataContainer.classList.remove('hide');
 
             lista.appendChild(rua);
             lista.appendChild(bairro);
@@ -42,8 +42,6 @@ function buscaCep() {
     
         }).catch(erro => {
             lista.innerHTML = 'Digite um CEP válido';
-            dataContainer.classList.remove('hide');
-
             inputCep.value = '';
             inputCep.focus();
         })
