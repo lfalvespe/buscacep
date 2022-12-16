@@ -1,4 +1,3 @@
-
 function buscaCep() {
     inputCep = document.querySelector('#cep');
     const CEP = inputCep.value.replace('-', '');
