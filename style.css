@@ -73,6 +73,6 @@ footer #links img:hover {
 
 @media screen and (max-width:800px) {
     footer {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
