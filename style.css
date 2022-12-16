@@ -19,5 +19,5 @@ body {
 
 #data_container {
     opacity: 90%;
-    box-shadow: inset 1px 1px 3px rgba(76, 74, 74, 0.482);
+    box-shadow: inset 2px 2px 4px rgba(76, 74, 74, 0.482);
 }
