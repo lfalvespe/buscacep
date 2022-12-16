@@ -37,7 +37,7 @@ footer {
 footer #logo img {
     height: 50px;
     filter: drop-shadow(1px 1px 1px rgba(252, 252, 173, 0.164));
-    opacity: 90%;
+    opacity: 80%;
 }
 
 footer #mail {
