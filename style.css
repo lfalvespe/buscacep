@@ -2,7 +2,7 @@
 
 body {
     background: rgb(7,2,42);
-    background: linear-gradient(90deg, rgba(7,2,42,0.5355275899422269) 0%, rgba(171,171,165,0.4795051809786415) 100%); 
+    background: linear-gradient(90deg, rgba(2, 0, 10, 0.529) 0%, rgba(171,171,165,0.4795051809786415) 100%); 
 }
 
 #titulo, #spanConsulta {
@@ -13,5 +13,7 @@ body {
    display: none;
 }
 
-
-
+#data_container {
+    opacity: 90%;
+    box-shadow: inset 1px 1px 3px rgba(76, 74, 74, 0.482);
+}
