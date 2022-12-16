@@ -50,7 +50,8 @@ footer #mail p {
     text-align: center;
     line-height: 25px;
     font-size: 1rem;
-    color: rgba(46, 46, 125, 0.696);
+     color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.474);
 }
 
 footer #links {
