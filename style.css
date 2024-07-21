@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(7,2,42);
+    background: linear-gradient(90deg, rgba(2, 0, 10, 0.529) 0%, rgba(171,171,165,0.4795051809786415) 100%); 
+}
+
+#titulo, #spanConsulta {
+    text-shadow: 1px 1px 2px rgba(234, 255, 255, 0.263);
+}
+
+/*
+.hide {
+  
+   visibility: hidden;
+}
+*/
+
+#form_container{
+    background-color: rgba(85, 85, 205, 0.77);
+}
+
+#data_container {
+    opacity: 90%;
+    box-shadow: inset 2px 2px 4px rgba(76, 74, 74, 0.482);
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 25px;
+}
+
+footer #logo img {
+    height: 50px;
+    filter: drop-shadow(1px 1px 1px rgba(252, 252, 173, 0.164));
+    opacity: 80%;
+}
+
+footer #mail {
+    flex: 100%;
+    height: 60px;
+}
+
+footer #mail p {
+    margin-left: 16px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.474);
+}
+
+footer #links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer #links img {
+    padding: 3px;
+    margin-left: 5px;
+    border-top: 1px solid rgba(255, 255, 0, 0.158);
+    border-right: 1px solid rgba(255, 255, 0, 0.158);
+    border-radius: 5px;
+    opacity: 70%;
+}
+
+footer #links img:hover {
+    opacity: 100%;
+}
+
+@media screen and (max-width:800px) {
+    footer {
+        margin-top: 10px;
+    }
+}
