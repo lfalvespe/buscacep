@@ -1,77 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/location.png" type="image/png" />
     <title>Busca Cep</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="pt-3 mt-5">
+    <div
+      class="navbar-container container col-9 col-sm-7 col-lg-5 col-xl-4 col-md-6 p-3"
+    >
+      <nav class="navbar d-flex justify-content-between">
+        <a
+          class="text-decoration-none text-capitalize rounded"
+          href="https://climagora.vercel.app/"
+          target="_blank"
+          > <span class="link-icon">📬</span>Busca Cep
+        </a>
+        <a
+          class="text-decoration-none text-capitalize rounded"
+          href="https://climagora.vercel.app/"
+          target="_blank"
+          > <span class="link-icon">⛅</span>Clima Agora
+        </a>
+        <a
+          class="text-decoration-none text-capitalize rounded"
+          href="https://contador-reactjs.vercel.app/"
+          target="_blank"
+          > <span class="link-icon">🎰</span>Contador Numérico
+        </a>
+        <a
+          class="text-decoration-none text-capitalize rounded"
+          href="https://numerosaleatorios-react.vercel.app/"
+          target="_blank"
+          > <span class="link-icon">🎲</span>Números aleatórios
+        </a>
+      </nav>
+    </div>
 
-</head>
-<body class="pt-3 mt-5">
+    <section
+      id="form_container"
+      class="container col-8 col-sm-7 col-lg-5 col-xl-4 col-md-6 p-3 rounded shadow"
+    >
+      <p id="titulo" class="display-6 text-light">Busca CEP</p>
 
-    <section id="form_container" class="container col-8 col-sm-7 col-lg-5 col-xl-4 col-md-6 p-3 rounded shadow">
+      <form action="" method="post">
+        <div class="form-floating">
+          <input
+            type="text"
+            name="cep"
+            id="cep"
+            class="form-control"
+            placeholder="CEP"
+            required
+            autofocus
+          />
+          <label for="cep" class="text-secondary">Digite um cep</label>
 
-        <p id="titulo" class="display-6  text-light">Busca CEP</p>
-
-        <form action="" method="post">
-            <div class="form-floating">
-                <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" required autofocus>
-                <label for="cep" class="text-secondary">Digite um cep</label>
-
-                <input id="btn_procurar" type="submit" value="Pesquisar" class="btn btn-secondary mt-3 text-light shadow">
-                
-            </div>
-        </form>
-
+          <input
+            id="btn_procurar"
+            type="submit"
+            value="Pesquisar"
+            class="btn btn-secondary mt-3 text-light shadow"
+          />
+        </div>
+      </form>
     </section>
 
     <section class="mt-4">
-        <hr class="col-8 col-sm-7 col-lg-5 col-xl-4 col-md-6 mx-auto text-light">
+      <hr
+        class="col-8 col-sm-7 col-lg-5 col-xl-4 col-md-6 mx-auto text-light"
+      />
     </section>
 
-    <section id="data_container" class="container bg-light col-8 col-sm-7 col-lg-5 col-xl-4 col-md-6 mt-4 p-3 rounded">
+    <section
+      id="data_container"
+      class="invisible mx-auto bg-light col-8 col-sm-7 col-lg-5 col-xl-4 col-md-6 pb-1 rounded"
+    >
+      <div
+        id="spanConsulta"
+        class=" display-7 rounded"
+        style="background-color: #16509b73"
+      >
+        
+        <span
+          id="cepConsultado"
+          class="container ms-2"
+          style="
+            text-shadow: 1px 1px 2px #00000042;
+            font-weight: 500;
+            color: #fadd3c;
+          "
+        ></span>
+      </div>
 
-        <span id="spanConsulta" class="container-fluid display-7 text-light bg-warning rounded p-1"> Resultado: </span> 
-        <span id="cepConsultado" class="text-primary ms-2"></span>
-
-        <ul id="lista" class="ul mt-3 text-dark">
-            
-        </ul>
-
+      <ul id="lista" class="ul mt-3 text-dark"></ul>
     </section>
-
 
     <footer>
+      <hr />
 
-        <hr>
+      <div
+        id="logo"
+        style="filter: drop-shadow(1px 1px 2px rgba(245, 202, 11, 0.404))"
+      >
+        <img src="img/logo.png" alt="" />
+      </div>
 
-        <div id="logo"><img src="img/logo.png" alt=""></div>
-        
+      <div id="links">
+        <a href="https://instagram.com/lfalvespe" target="_blank"
+          ><img src="img/instagram.png" alt="" height="30"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/fernando-alves-6a410323b/"
+          target="_blank"
+          ><img src="img/linkedin-blue.png" alt="" height="30"
+        /></a>
+        <a href="https://github.com/lfalvespe" target="_blank"
+          ><img src="img/github.png" alt="" height="30"
+        /></a>
+        <a href="mailto:lfalvespe@gmail.com"
+          ><img src="img/gmail.png" alt="" height="30"
+        /></a>
+      </div>
 
-
-        <div id="links">
-            <a href="https://instagram.com/lfalvespe" target="_blank"><img src="img/instagram.png" alt="" height="30"></a>
-            <a href="https://www.linkedin.com/in/fernando-alves-6a410323b/" target="_blank"><img src="img/linkedin-blue.png" alt="" height="30"></a>
-            <a href="https://github.com/lfalvespe" target="_blank"><img src="img/github.png" alt="" height="30"></a>
-            <a href="mailto:lfalvespe@gmail.com"><img src="img/gmail.png" alt="" height="30"></a>
-        </div>
-
-        <div id="mail">
-            <p>
-                Criado por <em><strong>Fernando Alves</strong></em>
-                <br>lfalvespe@gmail.com
-            </p>
-        </div>
-
-        
+      <div id="mail">
+        <p>
+          Criado por
+          <em><span class="author text-warning">Fernando Alves</span></em>
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-
-    
-    
-</body>
+  </body>
 </html>

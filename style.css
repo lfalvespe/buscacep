@@ -5,24 +5,37 @@ body {
     background: linear-gradient(90deg, rgba(2, 0, 10, 0.529) 0%, rgba(171,171,165,0.4795051809786415) 100%); 
 }
 
+nav a {
+    font-size: .8em;
+    color: #3465a5;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.link-icon {
+    vertical-align:text-bottom;
+}
+
 #titulo, #spanConsulta {
     text-shadow: 1px 1px 2px rgba(234, 255, 255, 0.263);
 }
 
-/*
-.hide {
-  
-   visibility: hidden;
-}
-*/
-
 #form_container{
-    background-color: rgba(85, 85, 205, 0.77);
+    /* background-color: rgba(85, 85, 205, 0.77); */
+    background-color: #164f9b42;
 }
 
 #data_container {
     opacity: 90%;
     box-shadow: inset 2px 2px 4px rgba(76, 74, 74, 0.482);
+}
+
+.erro {
+    color: red;
 }
 
 footer {
@@ -65,8 +78,8 @@ footer #links {
 footer #links img {
     padding: 3px;
     margin-left: 5px;
-    border-top: 1px solid rgba(255, 255, 0, 0.158);
-    border-right: 1px solid rgba(255, 255, 0, 0.158);
+    border-top: 1px solid rgba(255, 255, 0, 0.274);
+    border-right: 1px solid rgba(255, 255, 0, 0.274);
     border-radius: 5px;
     opacity: 70%;
 }
