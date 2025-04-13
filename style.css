@@ -1,8 +1,17 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: rgb(7,2,42);
-    background: linear-gradient(90deg, rgba(2, 0, 10, 0.529) 0%, rgba(171,171,165,0.4795051809786415) 100%); 
+    background: linear-gradient(90deg, rgba(2, 0, 10, 0.529) 0%, rgba(2, 40, 83, 0.719) 100%); 
+}
+
+.body {
+    background-color: #1f1f1f;
 }
 
 nav a {
@@ -16,7 +25,8 @@ nav a:hover {
     color: #fff;
 }
 
-.link-icon {
+.nav-icon {
+    width: 15px;
     vertical-align:text-bottom;
 }
 
