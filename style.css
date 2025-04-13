@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgba(2, 0, 10, 0.529) 0%, rgba(2, 40, 83, 0.719) 100%); 
+    background: linear-gradient(90deg, rgba(2, 0, 10, 0.529) 0%, rgba(2, 40, 83, 0.719) 100%);
 }
 
 .body {
@@ -27,16 +27,25 @@ nav a:hover {
 
 .nav-icon {
     width: 15px;
-    vertical-align:text-bottom;
+    vertical-align: text-bottom;
 }
 
-#titulo, #spanConsulta {
+#titulo,
+#spanConsulta {
     text-shadow: 1px 1px 2px rgba(234, 255, 255, 0.263);
 }
 
-#form_container{
+#spanConsulta {
+    font-size: 1em;
+}
+
+#form_container {
     /* background-color: rgba(85, 85, 205, 0.77); */
     background-color: #164f9b42;
+}
+
+.hide {
+    display: none;
 }
 
 #data_container {

@@ -15,32 +15,47 @@
     />
   </head>
   <body class="body">
-    <div
-      class="mx-auto ol-11 col-sm-7 col-lg-5 col-xl-4 col-md-6 mb-5"
-    >
+    <div class="mx-auto ol-11 col-sm-7 col-lg-5 col-xl-4 col-md-6 mb-5">
       <nav class="navbar mx-auto px-3 d-flex flex-wrap justify-content-between">
         <a
           class="text-decoration-none text-capitalize rounded"
-          href="https://cronometro-reactjs.vercel.app/" target="_blank"
-          > <span class="link-icon"><img src="/img/chronometer-100.png" alt="" class="nav-icon"> </span>Cronômetro
+          href="https://cronometro-reactjs.vercel.app/"
+          target="_blank"
+        >
+          <span class="link-icon"
+            ><img
+              src="/img/chronometer-100.png"
+              alt=""
+              class="nav-icon"
+            /> </span
+          >Cronômetro
         </a>
         <a
           class="text-decoration-none text-capitalize rounded"
           href="https://climagora.vercel.app/"
           target="_blank"
-          > <span class="link-icon"><img src="/img/weather.png" alt="" class="nav-icon"> </span>Clima Agora
+        >
+          <span class="link-icon"
+            ><img src="/img/weather.png" alt="" class="nav-icon" /> </span
+          >Clima Agora
         </a>
         <a
           class="text-decoration-none text-capitalize rounded"
           href="https://contador-reactjs.vercel.app/"
           target="_blank"
-          > <span class="link-icon"><img src="/img/counter.png" alt="" class="nav-icon"> </span>Contador Numérico
+        >
+          <span class="link-icon"
+            ><img src="/img/counter.png" alt="" class="nav-icon" /> </span
+          >Contador Numérico
         </a>
         <a
           class="text-decoration-none text-capitalize rounded"
           href="https://numerosaleatorios-react.vercel.app/"
           target="_blank"
-          > <span class="link-icon"><img src="/img/sort-64.png" alt="" class="nav-icon"> </span>Números aleatórios
+        >
+          <span class="link-icon"
+            ><img src="/img/sort-64.png" alt="" class="nav-icon" /> </span
+          >Números aleatórios
         </a>
       </nav>
     </div>
@@ -81,45 +96,48 @@
     </section>
 
     <section
-      id="data_container"
-      class="invisible mx-auto bg-light col-11 col-sm-7 col-lg-5 col-xl-4 col-md-6 pb-1 rounded"
+      id="instructions"
+      class="container col-8 mx-auto text-start text-secondary mt-5"
     >
-      <div
-        id="spanConsulta"
-        class=" display-7 rounded"
-        style="background-color: rgba(2, 40, 83, 0.719)"
-      >
-        
-        <span
-          id="cepConsultado"
-          class="container ms-2"
-          style="
-            text-shadow: 1px 1px 2px #00000042;
-            font-weight: 500;
-            color: #fadd3c;
-          "
-        ></span>
-      </div>
-
-      <ul id="lista" class="ul mt-3 text-dark"></ul>
-    </section>
-
-    <section id="instructions" class="container col-8 mx-auto text-start text-secondary mt-5">
-      <h6 class="text-center mb-4">Consulta de código de endereçamento postal (CEP) do Brasil.</h6>
+      <h6 class="text-center mb-4">
+        Consulta de código de endereçamento postal (CEP) do Brasil.
+      </h6>
       <ul>
         <li>informe um CEP válido com 8 dígitos</li>
         <li>Digite apenas números</li>
         <li>Digite apenas números</li>
       </ul>
+    </section>
 
+    <section
+      id="data_container"
+      class="invisible mt-5 mx-auto bg-light col-11 col-sm-7 col-lg-5 col-xl-4 col-md-6 pb-1 rounded"
+    >
+      <div
+        id="spanConsulta"
+        class="rounded d-flex justify-content-between"
+        style="background-color: rgba(2, 40, 83, 0.719)"
+      >
+        <div
+          id="cepConsultado"
+          style="
+            text-shadow: 1px 1px 2px #00000042;
+            font-weight: 500;
+            color: #fadd3c;
+          "
+        ></div>
+        <div id="close-data" class="px-2 text-light cursor-pointer" style="background-color: rgba(2, 40, 83, 0.719);">
+          <a href="" class="text-decoration-none text-light">X</a>
+        </div>
+      </div>
+
+      <ul id="lista" class="ul mt-3 text-dark"></ul>
     </section>
 
     <footer>
-
       <img id="logo" src="img/logo.png" alt="" />
 
       <div id="links">
-
         <a href="https://instagram.com/lfalvespe" target="_blank"
           ><img src="img/instagram.png" alt="" height="30"
         /></a>
@@ -140,9 +158,8 @@
         <p class="text-light">
           Criado por
           <em><span class="author text-warning">Fernando Alves</span></em>
-          <br><span class="text-secondary">&copy; 2025</span>
+          <br /><span class="text-secondary">&copy; 2025</span>
         </p>
-       
       </div>
     </footer>
 
