@@ -16,13 +16,13 @@ body {
 
 nav a {
     font-size: .8em;
-    color: #3465a5;
+    color: #e7eef8;
     font-weight: 500;
     margin-bottom: 4px;
 }
 
 nav a:hover {
-    color: #fff;
+    color: #b7cff1;
 }
 
 .nav-icon {
