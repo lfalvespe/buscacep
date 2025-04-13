@@ -1,3 +1,6 @@
+let instructions = document.querySelector('#instructions')
+
+
 function buscaCep() {
   inputCep = document.querySelector("#cep");
   const CEP = inputCep.value.replace("-", "");
@@ -38,6 +41,7 @@ function buscaCep() {
           lista.appendChild(estado);
 
           dataContainer.classList.remove('invisible')
+          instructions.classList.add('invisible')
 
         } else {
           dataContainer.classList.remove('invisible');

@@ -58,25 +58,24 @@ footer {
     align-items: center;
     gap: 5px;
     padding: 25px;
+    line-height: 20px;
 }
 
-footer #logo img {
+footer #logo {
     height: 50px;
-    filter: drop-shadow(1px 1px 1px rgba(252, 252, 173, 0.164));
+    filter: drop-shadow(1px 1px 2px rgba(245, 202, 11, 0.404));
     opacity: 80%;
 }
 
-footer #mail {
+footer #created {
     flex: 100%;
-    height: 60px;
 }
 
-footer #mail p {
+footer p {
     margin-left: 16px;
     text-align: center;
     line-height: 25px;
-    font-size: 1rem;
-    color: #fff;
+    font-size: .9rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.474);
 }
 
@@ -97,6 +96,8 @@ footer #links img {
 footer #links img:hover {
     opacity: 100%;
 }
+
+
 
 @media screen and (max-width:800px) {
     footer {
